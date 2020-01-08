@@ -2,16 +2,18 @@ import React from 'react'
 import matter from 'gray-matter'
 import ReactMarkdown from 'react-markdown'
 
+import Layout from '../../components/Layout'
+
 export default function PostTemplate({ content, data }) {
   // This holds the data between `---` from the .md file
   const frontmatter = data
   
   return (
-    <div>
+    <Layout>
       <h1>{frontmatter.title}</h1>
 
       <ReactMarkdown source={content} />
-    </div>
+    </Layout>
   )
 }
 
