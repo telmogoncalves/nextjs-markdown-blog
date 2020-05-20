@@ -9,10 +9,52 @@ Follow [this guide](https://medium.com/@shamnad.p.s/how-to-create-an-s3-bucket-a
 
 Login to you're [console](https://console.aws.amazon.com/console/home).
 
+I've got a bucket from 2014 named:
 
-## Retrieve your AWS keys and IDs 
+elasticbeanstalk-us-west-2-100641718971
 
-by following this guide
+Using a new one instead:
+
+nextjs-markdown-blog-s3-bucket
+
+Find the keys in the menu under your name (your account menu) called *My Security Credentials*
+
+```bash
+npm install awscli
+npm ERR! code E404
+npm ERR! 404 Not Found - GET https://registry.npmjs.org/awscli - Not found
+npm ERR! 404
+npm ERR! 404  'awscli@latest' is not in the npm registry.
+npm ERR! 404 You should bug the author to publish it (or use the name yourself!)
+npm ERR! 404
+npm ERR! 404 Note that you can also install from a
+npm ERR! 404 tarball, folder, http url, or git url.
+npm ERR! A complete log of this run can be found in:
+```
+
+Check the date on the article: Jul 21, 2018 · 3 min read (yeah right, that doesn't take into account this kind of problem).
+
+There are two versions of the CLI.
+
+Version 2.x – The current, has Breaking changes, Version 1.x is available for backwards compatiblity.  So you might run into problems following older instructions.  What's the cutoff point there?  Doesn't say.  That's not part of the 3 minute read.  [Following this](https://docs.aws.amazon.com/cli/latest/userguide/install-cliv2-windows.html) for now.
+
+```bash
+aws --version
+aws-cli/2.0.14 Python/3.7.7 Windows/10 botocore/2.0.0dev18
+aws s3 ls
+<your buckets>
+```
+
+These keys need to be added to the GitHub repos secrets section:
+
+```txt
+AWS_S3_BUCKET
+AWS_ACCESS_KEY_ID
+AWS_SECRET_ACCESS_KEY
+AWS_REGION
+```
+
+Create the yaml file via the article linked to above and make a PR on the master branch.
 
 
 ## Apex and his Orchestra
