@@ -1,8 +1,4 @@
-# Misc
-.DS_Store
-
-# Dependencies
+.now
 node_modules/
-
-# NextJS
 .next
+.DS_Store

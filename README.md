@@ -1,4 +1,19 @@
-# NextJS Blog with Markdown files
+# NextJS Markdown Blog
+
+Based on the simple [blog of Telmo Goncalves](https://telmo.im/writings/open-sourcing-blog) which uses React via Next.js to serve up markdown content.
+
+
+## Set up an S3 bucket with AWS for your production and staging environments
+
+Follow [this guide](https://medium.com/@shamnad.p.s/how-to-create-an-s3-bucket-and-aws-access-key-id-and-secret-access-key-for-accessing-it-5653b6e54337). Once that is ready, you can get your keys.
+
+Login to you're [console](https://console.aws.amazon.com/console/home).
+
+
+## Retrieve your AWS keys and IDs 
+
+by following this guide
+
 
 ## Apex and his Orchestra
 
